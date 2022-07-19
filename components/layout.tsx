@@ -7,7 +7,7 @@ export const siteTitle = 'Developer Portfolio'
 
 export default function Layout({ children, home }) {
   return (
-    <div >
+    <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
         <meta
           name="description"
@@ -15,10 +15,14 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
       </Head>
-      <header >
-        
+      <header className="fixed left-16 top-16 h-14 flex w-full" >
+        <div>_home</div>
+        <div>_projects</div>
+        <div>_about-me</div>
       </header>
-      <main>{children}</main>
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+        {children}
+      </main>
     </div>
   )
 }
