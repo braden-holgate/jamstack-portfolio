@@ -2,10 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import NavBar from './NavBar'
-const name = 'Braden Holgate'
+
 export const siteTitle = 'Developer Portfolio'
 
 export default function Layout({ children, home }) {
+  const name: string = 'Braden Holgate'
   return (
     <div className='flex min-h-screen flex-col items-center justify-center
      py- box-border bg-primary-light text-secondary-grey'>
