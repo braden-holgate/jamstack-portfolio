@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import ContactSideBar from './ContactSideBar'
 import NavBar from './NavBar'
 
 export const siteTitle = 'Developer Portfolio'
@@ -11,6 +12,7 @@ export default function Layout({ children, home }) {
     <div className='flex min-h-screen flex-col items-center justify-center
      py- box-border bg-primary-light text-secondary-grey'>
       <Head>
+        <title>Braden Holgate - Dev</title>
         <meta
           name='description'
           content='Showcasing and journaling on my projects'
@@ -18,6 +20,7 @@ export default function Layout({ children, home }) {
         <meta name='og:title' content={siteTitle} />
       </Head>
       <NavBar />
+      <ContactSideBar />
       <main className='flex w-full flex-1 flex-col items-center justify-center px-20 text-center'>
         {children}
       </main>

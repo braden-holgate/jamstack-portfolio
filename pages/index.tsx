@@ -6,11 +6,7 @@ import Link from 'next/link'
 
 const Home: NextPage = () => {
   return (
-    <Layout home>
-      <Head>
-        <title>Braden Holgate - Dev</title>
-      </Head>
-      
+    <Layout home>  
         <h1 className="text-6xl font-bold">
           Kia ora, I'm Braden Holgate
         </h1>
