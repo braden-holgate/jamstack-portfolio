@@ -7,18 +7,23 @@ import Link from 'next/link'
 const Home: NextPage = () => {
   return (
     <Layout home>  
-        <h1 className="text-6xl font-bold">
-          Kia ora, I'm Braden Holgate
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          A Software Dev with a background in Naval 
-          Architecture and brewing. I am passionate about coding, paragliding, financial education
-          and economics.
-        </p>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-      </footer>
+      <main className='flex flex-1 flex-row w-full basis-full items-center justify-end px-14'>
+        <section className='flex flex-col text-left w-1/2'>
+          <p className='text-2xl' >Kia ora, I'm</p>
+          <p className="text-6xl">Braden Holgate</p>
+          <p className='text-3xl'>Software Developer</p>
+          <p className="mt-3">
+            // a software dev with a background in naval architecture and brewery management.
+          </p>
+          <p>
+            // i am passionate about coding, paragliding, climate tech, and economics.
+          </p>
+          <p className=''>const githubLink="https://github.com/braden-holgate"</p>
+        </section>
+        <section className='flex flex-col justify-start text-left w-1/2'>
+          <p className="text-6xl">Github Gist Code Examples</p>
+        </section>
+      </main>
     </Layout>
   )
 }

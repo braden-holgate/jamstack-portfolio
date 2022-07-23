@@ -9,8 +9,8 @@ export const siteTitle = 'Developer Portfolio'
 export default function Layout({ children, home }) {
   const name: string = 'Braden Holgate'
   return (
-    <div className='flex min-h-screen flex-col items-center justify-center
-     py- box-border bg-primary-light text-secondary-grey'>
+    <div className='flex min-h-screen min-w-full flex-col items-start justify-center
+     box-border bg-primary-light text-secondary-grey'>
       <Head>
         <title>Braden Holgate - Dev</title>
         <meta
@@ -21,9 +21,9 @@ export default function Layout({ children, home }) {
       </Head>
       <NavBar />
       <ContactSideBar />
-      <main className='flex w-full flex-1 flex-col items-center justify-center px-20 text-center'>
-        {children}
-      </main>
+      {children}
+      <footer className="sticky bottom-0 flex h-14 w-full items-center justify-center border-t">
+      </footer>
     </div>
   )
 }
