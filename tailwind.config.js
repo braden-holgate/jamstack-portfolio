@@ -14,12 +14,12 @@ module.exports = {
       secondary: {
         grey: '#607B96',
         green: '#3C9D93',
-        purple: '4D5BCE',
+        purple: '#4D5BCE',
         white: '#FFFFFF',
       },
       accent: {
         orange: '#FEA55F',
-        green: '43D9AD',
+        green: '#43D9AD',
         rust: '#E99287',
         purple: '#C98BDF',
       },
