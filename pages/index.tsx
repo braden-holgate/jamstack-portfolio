@@ -1,13 +1,20 @@
+import React, {useState, Dispatch, SetStateAction} from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import Layout, { siteTitle } from '../components/Layout'
+import Layout from '../components/Layout'
 import Link from 'next/link'
 
-const Home: NextPage = () => {
+interface Props {
+  isOpen: boolean;
+  setIsOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+const Home: NextPage<Props> = ({isOpen, setIsOpen}: Props) => {
+
   return (
-    <Layout home>  
-      <main className='flex flex-1 flex-col w-full basis-full items-center justify-evenly xl:px-14 xl:flex-row'>
+    <Layout>  
+      <main className={isOpen ? 'hidden' : 'flex flex-1 flex-col w-full basis-full items-center justify-evenly xl:px-14 xl:flex-row'}>
         <section className='flex flex-col text-left w-4/5 xl:w-4/12'>
           <p className='text-lg xl:text-xl text-secondary-white' >Kia ora, I'm</p>
           <p className="text-6xl xl:text-6xl text-secondary-white">Braden Holgate</p>
