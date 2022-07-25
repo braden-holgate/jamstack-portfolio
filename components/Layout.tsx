@@ -22,7 +22,7 @@ export default function Layout({ children, home }) {
       <NavBar />
       <ContactSideBar />
       {children}
-      <footer className="sticky bottom-0 flex h-14 w-full items-center justify-center border-t">
+      <footer className="hidden xl:flex sticky bottom-0  h-14 w-full items-center justify-center border-t">
       </footer>
     </div>
   )
