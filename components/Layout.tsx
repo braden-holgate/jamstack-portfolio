@@ -18,8 +18,8 @@ export default function Layout({ children, home}: Props)  {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className='flex h-screen min-w-full flex-col items-start 
-     box-border bg-primary-light text-secondary-grey xl:min-h-screen'>
+    <div className='flex h-screen min-w-full flex-col 
+     box-border bg-primary-light text-secondary-grey '>
       <Head>
         <title>Braden Holgate - Dev</title>
         <meta

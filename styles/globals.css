@@ -7,4 +7,13 @@
     font-family: Fira Code;
     @apply to-secondary-grey;
   }
+  pre {
+    counter-reset: line;
+  }
+  code {
+    counter-increment: line;
+  }
+  code:before {
+    content: counter(line);
+  }
 }
