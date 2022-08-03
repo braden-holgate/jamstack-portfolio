@@ -8,7 +8,7 @@ import HamburgerMenu from './HamburgerMenu'
 
 type Props = {
   children?: React.ReactNode;
-  home: boolean;
+  home?: boolean | undefined;
 }
 
 
@@ -16,10 +16,10 @@ export default function Layout({ children, home}: Props)  {
 
   const name: string = 'Braden Holgate'
   const [isOpen, setIsOpen] = useState(false)
-  console.log(home)
+
   return (
-    <div className='flex min-h-screen min-w-full flex-col items-start justify-center
-     box-border bg-primary-light text-secondary-grey'>
+    <div className='flex h-screen min-w-full flex-col items-start 
+     box-border bg-primary-light text-secondary-grey xl:min-h-screen'>
       <Head>
         <title>Braden Holgate - Dev</title>
         <meta
@@ -30,10 +30,8 @@ export default function Layout({ children, home}: Props)  {
       </Head>
       <NavBar />
       <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} home={home}/>
-      <ContactSideBar />
       {isOpen ? null : children}
-      <footer className="hidden xl:flex sticky bottom-0 h-14 w-full items-center justify-center border-t">
-      </footer>
+      <ContactSideBar />
     </div>
   )
 }
