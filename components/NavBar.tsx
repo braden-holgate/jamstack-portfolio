@@ -8,7 +8,7 @@ const NavBar: FC = () => {
     <>
       <nav className='hidden xl:flex xl:sticky top-0 h-14  w-full border border-solid border-lines text-center items-center' >
         <Link href='/'>
-          <a className= 'basis-72 flex-none py-4 pl-6 border-r border-lines text-left'>braden-holgate</a>
+          <a className= 'flex-none basis-80 py-4 pl-6 border-r border-lines text-left'>braden-holgate</a>
         </Link>
         <Link href='/'>
           <a className='basis-1/12 py-4 border-r border-lines' aria-current='true'>_home</a>
