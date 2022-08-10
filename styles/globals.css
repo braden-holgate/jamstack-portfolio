@@ -7,11 +7,10 @@
     font-family: Fira Code;
     @apply to-secondary-grey;
   }
-  pre {
-    counter-reset: line;
-  }
   code {
     counter-increment: line;
+    font-family: Fira Code;
+    font-size: 16px;
   }
   code:before {
     content: counter(line);

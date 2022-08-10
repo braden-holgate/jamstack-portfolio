@@ -4,6 +4,7 @@ import LineNumbers from '../components/LineNumbers';
 import PersonalBlurb from '../components/PersonalBlurb';
 import SideMenuDesktop from '../components/SideMenuDesktop';
 import SubMenuBar from '../components/SideMenuDesktop';
+import TabLayout from '../components/TabLayout';
 
 interface Props {
   isOpen: boolean;
@@ -32,10 +33,13 @@ const About: FC<Props> = ({isOpen, setIsOpen}: Props) => {
       </main>
 
       {/* desktop */}
-      <main className='hidden xl:flex w-full h-full overflow-y-auto items-center xl:justify-start xl:static xl:px-14 xl:flex-row xl:items-start'>
+      <main className='hidden xl:flex w-full h-full overflow-y-auto items-center xl:justify-start xl:static xl:pl-14 xl:flex-row xl:items-start'>
         <SideMenuDesktop />
-        <LineNumbers />
-        <PersonalBlurb />
+        <TabLayout >
+          <LineNumbers />
+          <PersonalBlurb />
+        </TabLayout>
+
       </main>
     </Layout>
   )
